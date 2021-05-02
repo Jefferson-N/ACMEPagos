@@ -41,8 +41,7 @@ The amount to pay ASTRID is: 85 USD
 	a los valores y estas no pueden contener valores duplicados.
 	Luego el sistema realizara comparaciones para sumar los pagos del empleado asignando este valor a una 
 	variable donde va a contener el sueldo total del empleado
-	
-Enlace   ![Alt Diagrama UML](https://github.com/Jefferson-N/ACMEPagos/blob/master/src/com/acme/imagen/uml/ACMEPagosUML.jpg)	
+
 	*Tomar en cuenta que para evitar conflictos a futuro los nombres y días laborados no pueden repetirse.
 	
 	*Una recomendación seria que si los nombres de los empleados coinciden se les podría agregar la inicial del primer apellido al nombre
@@ -53,8 +52,8 @@ Enlace   ![Alt Diagrama UML](https://github.com/Jefferson-N/ACMEPagos/blob/maste
 	*Los datos de los empleados deben registrarse según de la siguiente manera:
 		Nombre=DiaHorario,DiaHorario,DiaHorario,DiaHorario
 		DAVID=FR00:01-09:00,TU09:01-18:00,WE18:01-00:00
-	De esta manera el sistema podrá separar la información y almacenarla en diccionarios
-
+	De esta manera el sistema podrá separar la información y almacenarla en 
+	
 ## 	Enfoque utilizado:
 		Se utilizo el modelo en cascada ya que es un proceso secuencial, la cual permite
 		dividir los procesos de desarrollo en fases sucesivas del proyecto.
