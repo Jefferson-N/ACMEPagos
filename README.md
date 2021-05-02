@@ -1,6 +1,6 @@
 # ACMEPagos
-## Exercise
-The company ACME offers their employees the flexibility to work the hours they want. They will pay for the hours worked based on the day of the week and time of day, according to the following table:
+Exercise
+###The company ACME offers their employees the flexibility to work the hours they want. They will pay for the hours worked based on the day of the week and time of day, according to the following table:
 Monday - Friday
 00:01 - 09:00 25 USD
 09:01 - 18:00 15 USD
@@ -118,10 +118,10 @@ Mediante código de git:
 	1.- Abrimos la consola de comandos 
 	2.-Nos ubicamos en la carpeta donde se desea clonar el proyecto.
 	3.-Ingresar el siguiente código
-	###	# git clone https://github.com/Jefferson-N/ACMEPagos.git 
+		# git clone https://github.com/Jefferson-N/ACMEPagos.git 
 	4.- presionar enter y el proyecto se copiara a la carpeta seleccionad.
 	
-##	Instrucciones para compilar y ejecutar el proyecto
+	Instrucciones para compilar y ejecutar el proyecto
  Dadas las especificaciones, el proyecto se subió sin los archivos compilados.
 A continuación, se detalla en que sistema se desarrolló la a aplicación y los pasos a seguir para compilar y ejecutar el proyecto. 
 	# El proyecto se realizó en un sistema con las siguientes características:
