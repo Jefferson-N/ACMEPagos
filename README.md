@@ -170,6 +170,5 @@ A continuación, se detalla en que sistema se desarrolló la a aplicación y los
 
 	10.-El proyecto procede a ejecutarse y compilarse
 
-.## Diagrama UML	
-Enlace Diagrama UML   ![Alt Diagrama UML](https://github.com/Jefferson-N/ACMEPagos/blob/master/src/com/acme/imagen/uml/ACMEPagosUML.jpg)
+## Diagrama UML   ![Alt Diagrama UML](https://github.com/Jefferson-N/ACMEPagos/blob/master/src/com/acme/imagen/uml/ACMEPagosUML.jpg)
 
