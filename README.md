@@ -114,18 +114,29 @@ The amount to pay ASTRID is: 85 USD
 		   Mantenimiento: en esta fase se corrige el codigo para que el sistema funcione de acuerda a las exigencias de la empresa ACME		
 	
 	## Metodología utilizada 
+
 	Nos basamos en la metodología Scrum la cual es una metodología ágil y nos permite divide en etapas 
 	(análisis, desarrollo y testing)
 	Instrucciones para descargar el proyecto-
 	Se puede descargar el proyecto de dos maneras:
+
 	1- Ingrese al siguiente Link  https://github.com/Jefferson-N/ACMEPagos.git 
+
 	2.- En la parte superior derecha de la página dar click en code.
+
 	3.-Seleccionar Descargar ZIP, la descarga se iniciara.
+
+
 Mediante código de git:
+
 	1.- Abrimos la consola de comandos 
+
 	2.-Nos ubicamos en la carpeta donde se desea clonar el proyecto.
+
 	3.-Ingresar el siguiente código
+
 		# git clone https://github.com/Jefferson-N/ACMEPagos.git 
+
 	4.- presionar enter y el proyecto se copiara a la carpeta seleccionad.
 	
 	Instrucciones para compilar y ejecutar el proyecto
