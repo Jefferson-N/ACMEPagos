@@ -42,6 +42,8 @@ The amount to pay ASTRID is: 85 USD
 	Luego el sistema realizara comparaciones para sumar los pagos del empleado asignando este valor a una 
 	variable donde va a contener el sueldo total del empleado
 	
+	[Link](url) and ![Image](src[Link](https://github.com/Jefferson-N/ACMEPagos/blob/master/src/com/acme/imagen/uml/ACMEPagosUML.jpg  ) and! [Imagen](src)
+		
 	*Tomar en cuenta que para evitar conflictos a futuro los nombres y días laborados no pueden repetirse.
 	
 	*Una recomendación seria que si los nombres de los empleados coinciden se les podría agregar la inicial del primer apellido al nombre
