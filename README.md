@@ -1,6 +1,7 @@
 # ACMEPagos
 Exercise
-###The company ACME offers their employees the flexibility to work the hours they want. They will pay for the hours worked based on the day of the week and time of day, according to the following table:
+The company ACME offers their employees the flexibility to work the hours they want. They will pay for 
+the hours worked based on the day of the week and time of day, according to the following table:
 Monday - Friday
 00:01 - 09:00 25 USD
 09:01 - 18:00 15 USD
@@ -9,7 +10,9 @@ Saturday and Sunday
 00:01 - 09:00 30 USD
 09:01 - 18:00 20 USD
 18:01 - 00:00 25 USD
-The goal of this exercise is to calculate the total that the company has to pay an employee, based on the hours they worked and the times during which they worked. The following abbreviations will be used for entering data:
+The goal of this exercise is to calculate the total that the company has to pay an employee, based on 
+the hours they worked and the times during which they worked. The following abbreviations will be used 
+for entering data:
 MO: Monday
 TU: Tuesday
 WE: Wednesday
@@ -17,7 +20,8 @@ TH: Thursday
 FR: Friday
 SA: Saturday
 SU: Sunday
-Input: the name of an employee and the schedule they worked, indicating the time and hours. This should be a .txt file with at least five sets of data. You can include the data from our two examples below.
+Input: the name of an employee and the schedule they worked, indicating the time and hours. This should 
+be a .txt file with at least five sets of data. You can include the data from our two examples below.
 Output: indicate how much the employee has to be paid
 ##For example:
 Case 1:
@@ -85,8 +89,10 @@ The amount to pay ASTRID is: 85 USD
 				Class Main: Esta clase muestra la información de los pagos generados a cada empleado al usuario.
 			
 			paquete com.acme.controlador
-				class ControlArchivo: Esta clase realiza las operaciones para leer el archivo y guardar la información en un diccionario Map
-				class ControlInformacion: Esta clase permite registrar la información dada para las comparaciones y validacion de los sueldos de cada empleado
+				class ControlArchivo: Esta clase realiza las operaciones para leer el archivo y guardar 
+						      la información en un diccionario Map
+				class ControlInformacion: Esta clase permite registrar la información dada para las comparaciones y 
+							  validacion de los sueldos de cada empleado
 			 
 			-------Paquetes adicionales-------------------
 			com.acme.test: Paquete que contiene los test de la clase persona
@@ -102,7 +108,8 @@ The amount to pay ASTRID is: 85 USD
 				Class ControlArchivoTest: Esta clase va a realizar pruebas unitarias de la clase ControlArchivo
 				Class ControlInformacionTest: Esta clase va a realizar pruebas unitarias de la clase ControlInformacion
 		
-		   Pruebas: En esta fase se realizaron pruebas de funcionamiento del software para ver si el software cumple con las exigencias DE la empresa ACME.
+		   Pruebas: En esta fase se realizaron pruebas de funcionamiento del software para ver si el software cumple con las exigencias DE la	
+		 	    empresa ACME.
 			
 		   Mantenimiento: en esta fase se corrige el codigo para que el sistema funcione de acuerda a las exigencias de la empresa ACME		
 	
