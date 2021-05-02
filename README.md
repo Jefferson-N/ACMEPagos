@@ -36,84 +36,89 @@ OUTPUT:
 The amount to pay ASTRID is: 85 USD
 
 ## Descripcion de la Solución :
-	El codigo esta constituido por metodos que asignan tareas, para capturar la informacion de archivo(.txt)
-	dividiendo la informacion según el horario y costo por hora, esta informacion se guarda en diccionarios que asocian claves 
-	a los valores y estas no pueden contener valores duplicados.
-	Luego el sistema realizara comparaciones para sumar los pagos del empleado asignando este valor a una 
-	variable donde va a contener el sueldo total del empleado
+El codigo esta constituido por metodos que asignan tareas, para capturar la informacion de archivo(.txt)
+dividiendo la informacion según el horario y costo por hora, esta informacion se guarda en diccionarios que asocian claves 
+a los valores y estas no pueden contener valores duplicados.
+Luego el sistema realizara comparaciones para sumar los pagos del empleado asignando este valor a una 
+variable donde va a contener el sueldo total del empleado
+
+*Tomar en cuenta que para evitar conflictos a futuro los nombres y días laborados no pueden repetirse.
+
+*Una recomendación seria que si los nombres de los empleados coinciden se les podría agregar la inicial del primer apellido al nombre
+ejemplo JeffersonN o poner el segundo nombre de uno de los empleados.
+
+*Los empleados podrán escoger un horario por cada día de la semana
 	
-	*Tomar en cuenta que para evitar conflictos a futuro los nombres y días laborados no pueden repetirse.
-	
-	*Una recomendación seria que si los nombres de los empleados coinciden se les podría agregar la inicial del primer apellido al nombre
-	ejemplo JeffersonN o poner el segundo nombre de uno de los empleados.
-	
-	*Los empleados podrán escoger un horario por cada día de la semana
-	
-	*Los datos de los empleados deben registrarse según de la siguiente manera:
-		Nombre=DiaHorario,DiaHorario,DiaHorario,DiaHorario
-		DAVID=FR00:01-09:00,TU09:01-18:00,WE18:01-00:00
-	De esta manera el sistema podrá separar la información y almacenarla en diccionarios
+*Los datos de los empleados deben registrarse según de la siguiente manera:
+	Nombre=DiaHorario,DiaHorario,DiaHorario,DiaHorario
+	DAVID=FR00:01-09:00,TU09:01-18:00,WE18:01-00:00
+De esta manera el sistema podrá separar la información y almacenarla en diccionarios
 
 ## 	Enfoque utilizado:
-		Se utilizo el modelo en cascada ya que es un proceso secuencial, la cual permite
-		dividir los procesos de desarrollo en fases sucesivas del proyecto.
-		
-		Este enfoque permite al desarrollador verificar la aplicación en el siguiente orden:
-##   	Análisis: 
-			En esta parte es donde verificamos los requisitos que pide el ejercicio:
-			*El sistema Pide el ingreso de un nombre 
-			  una jornada laboral en Archivo.txt, el cual contendrá la información
-			  de 5 empleados.
-			  INPUT
-			  RENE=MO10:00-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00-21:00
-			
-			*El sistema tendrá una salida en pantalla con el siguiente formato.
-   			  OUTPUT:
-			   The amount to pay Rene is: 85 USD
-			  Dado que los horarios del caso anterior no son similares a los horarios de comparación,
-			  el sistema va imprimir un sueldo de 0USD, es por esto que se han modificado los horarios
-			  de los ejemplos para que imprima un valor real.
-			*La información ingresada anteriormente será comparada según los días y horarios establecidos por el cliente:
-			
-## 	Diseño:
-			Para la arquitectura de software se utilizó el MVC(Modelo Vista Controlador)
-			Modelo: Va a contener la estructura de las clases implementadas de la siguiente manera:
-			Paquete com.acme.modelo
-				Class Persona : Basado en los principios SOLID se creo esta clase para que sirva de 
-						base para que puedan heredar clases hijas.
-				Class Empleado : Esta clase hereda los atriburos de la clase persona.
-				Class DiaTrabajo : Esta clase sirne de plantilla contruir un array de la misma que almacene valores,
-						   representando el dia trabajado por un empleado
-			
-			Paquete com.acme.Vista
-				Class Main: Esta clase muestra la información de los pagos generados a cada empleado al usuario.
-			
-			paquete com.acme.controlador
-				class ControlArchivo: Esta clase realiza las operaciones para leer el archivo y guardar 
-						      la información en un diccionario Map
-				class ControlInformacion: Esta clase permite registrar la información dada para las comparaciones y 
-							  validacion de los sueldos de cada empleado
-			 
-			-------Paquetes adicionales-------------------
-			com.acme.test: Paquete que contiene los test de la clase persona
-			com.acme.imagen.uml: paquete que contiene un diagrama uml en formato jpg del proyecto
-			com.acme.excepcion: Este paquete contiene una clase LLamada EmptyException la cual hereda los atributos de la clase Exception
-						que permite enviar un mensaje de Excepcion personalizado.
-##		   Implementación	
-			En esta fase realizamos las pruebas unitarias:
-				En esta fase se busca errores en el codigo
-				Para la realización de pruebas unitarias añadimos una biblioteca externa:
-				JUnit 4
-			Paquete com.acme.test: Este paquete va a contener las siguientes clases:
-				Class ControlArchivoTest: Esta clase va a realizar pruebas unitarias de la clase ControlArchivo
-				Class ControlInformacionTest: Esta clase va a realizar pruebas unitarias de la clase ControlInformacion
-		
-		   Pruebas: En esta fase se realizaron pruebas de funcionamiento del software para ver si el software cumple con las exigencias DE la	
-		 	    empresa ACME.
-			
-		   Mantenimiento: en esta fase se corrige el codigo para que el sistema funcione de acuerda a las exigencias de la empresa ACME		
+	Se utilizo el modelo en cascada ya que es un proceso secuencial, la cual permite
+	dividir los procesos de desarrollo en fases sucesivas del proyecto.
 	
-	## Metodología utilizada 
+	Este enfoque permite al desarrollador verificar la aplicación en el siguiente orden:
+
+##   	Análisis: 
+En esta parte es donde verificamos los requisitos que pide el ejercicio:
+
+*El sistema Pide el ingreso de un nombre 
+
+  una jornada laboral en Archivo.txt, el cual contendrá la información
+  de 5 empleados.
+  INPUT
+  RENE=MO10:00-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00-21:00
+
+*El sistema tendrá una salida en pantalla con el siguiente formato.
+	  OUTPUT:
+	   The amount to pay Rene is: 85 USD
+	  Dado que los horarios del caso anterior no son similares a los horarios de comparación,
+	  el sistema va imprimir un sueldo de 0USD, es por esto que se han modificado los horarios
+	  de los ejemplos para que imprima un valor real.
+
+	*La información ingresada anteriormente será comparada según los días y horarios establecidos por el cliente:
+		
+## 	Diseño:
+	Para la arquitectura de software se utilizó el MVC(Modelo Vista Controlador)
+	Modelo: Va a contener la estructura de las clases implementadas de la siguiente manera:
+	Paquete com.acme.modelo
+		Class Persona : Basado en los principios SOLID se creo esta clase para que sirva de 
+				base para que puedan heredar clases hijas.
+
+		Class Empleado : Esta clase hereda los atriburos de la clase persona.
+
+		Class DiaTrabajo : Esta clase sirne de plantilla contruir un array de la misma que almacene valores,
+				   representando el dia trabajado por un empleado
+	
+	Paquete com.acme.Vista
+		Class Main: Esta clase muestra la información de los pagos generados a cada empleado al usuario.
+		
+	paquete com.acme.controlador
+		class ControlArchivo: Esta clase realiza las operaciones para leer el archivo y guardar 
+					      la información en un diccionario Map
+			class ControlInformacion: Esta clase permite registrar la información dada para las comparaciones y 
+						  validacion de los sueldos de cada empleado
+		 
+	-------Paquetes adicionales-------------------
+	com.acme.test: Paquete que contiene los test de la clase persona
+	com.acme.imagen.uml: paquete que contiene un diagrama uml en formato jpg del proyecto
+	com.acme.excepcion: Este paquete contiene una clase LLamada EmptyException la cual hereda los atributos de la clase Exception
+			que permite enviar un mensaje de Excepcion personalizado.
+##	   Implementación	
+En esta fase realizamos las pruebas unitarias:
+En esta fase se busca errores en el codigo
+	Para la realización de pruebas unitarias añadimos una biblioteca externa:
+	JUnit 4
+	Paquete com.acme.test: Este paquete va a contener las siguientes clases:
+		Class ControlArchivoTest: Esta clase va a realizar pruebas unitarias de la clase ControlArchivo
+		Class ControlInformacionTest: Esta clase va a realizar pruebas unitarias de la clase ControlInformacion
+
+##   Pruebas: En esta fase se realizaron pruebas de funcionamiento del software para ver si el software cumple con las exigencias DE la	 	    empresa ACME.
+		
+Mantenimiento: en esta fase se corrige el codigo para que el sistema funcione de acuerda a las exigencias de la empresa ACME		
+		
+## Metodología utilizada 
 
 	Nos basamos en la metodología Scrum la cual es una metodología ágil y nos permite divide en etapas 
 	(análisis, desarrollo y testing)
@@ -169,3 +174,5 @@ A continuación, se detalla en que sistema se desarrolló la a aplicación y los
 	9.-Damos click en Java Aplication
 
 	10.-El proyecto procede a ejecutarse y compilarse
+
+## Diagrama UML   ![Alt Diagrama UML](https://github.com/Jefferson-N/ACMEPagos/blob/master/src/com/acme/imagen/uml/ACMEPagosUML.jpg)
