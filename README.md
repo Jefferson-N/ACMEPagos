@@ -127,9 +127,9 @@ The amount to pay ASTRID is: 85 USD
 	3.-Seleccionar Descargar ZIP, la descarga se iniciara.
 
 
-Mediante código de git:
+Mediante código de Git Bash:
 
-	1.- Abrimos la consola de comandos 
+	1.- Abrimos la consola de comandos de git
 
 	2.-Nos ubicamos en la carpeta donde se desea clonar el proyecto.
 
@@ -142,7 +142,7 @@ Mediante código de git:
 	Instrucciones para compilar y ejecutar el proyecto
  Dadas las especificaciones, el proyecto se subió sin los archivos compilados.
 A continuación, se detalla en que sistema se desarrolló la a aplicación y los pasos a seguir para compilar y ejecutar el proyecto. 
-	# El proyecto se realizó en un sistema con las siguientes características:
+## El proyecto se realizó en un sistema con las siguientes características:
 	
 	S.O(Sistema Operativo):			        Windows 10 Pro-64bits
 	Lenguaje de programación: 			java
@@ -169,5 +169,24 @@ A continuación, se detalla en que sistema se desarrolló la a aplicación y los
 	9.-Damos click en Java Aplication
 
 	10.-El proyecto procede a ejecutarse y compilarse
+
+### Compilar desde consola de windows:
+	
+	1.- Ejecutar como administrador la consola de comandos.
+	2.- Acedemos a la carpeta del proyecto.
+	3.- Creamos un directorio bin con el siguiente comando:
+		´md bin´
+	4.- ejecutamos el siguiente comando:
+		javac -d bin -cp src src/com/acme/vista/Main.java
+	5.- Presionar enter
+Se generaran los archivos compilados y se guardaran en la carpeta bin.
+
+### Ejecutar desde consola de windows:
+	1.- Ejecutar como administrador la consola de comandos.
+	2.- Acedemos a la carpeta del proyecto.
+	3.- Si ya se realizo la compilacion  se ejecuta el siguiente codigo:
+			java -cp bin com.acme.vista.Main
+	4.-Presionar enter
+El proyecto se ejecutara y mostrara la informacion en consola
 
 ## Diagrama UML   ![Alt Diagrama UML](https://github.com/Jefferson-N/ACMEPagos/blob/master/src/com/acme/imagen/uml/ACMEPagosUML.jpg)
